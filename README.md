@@ -141,7 +141,3 @@ Este proyecto está bajo la Licencia MIT. Consulta el archivo LICENSE para más 
 <a href="https://ibb.co/Wy9MBtt"><img src="https://i.ibb.co/yyTZgSS/Captura-de-pantalla-2024-05-23-111900.png" alt="Captura-de-pantalla-2024-05-23-111900" border="0"></a>
 
 <a href="https://ibb.co/Qf7kKMJ"><img src="https://i.ibb.co/c1KwrQy/Captura-de-pantalla-2024-05-23-111937.png" alt="Captura-de-pantalla-2024-05-23-111937" border="0"></a>
-
-**Créditos**
-
-Des
