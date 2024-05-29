@@ -1,80 +1,81 @@
-# Thief Raccoon - Login Phishing Tool
+```python
+# Thief Raccoon - Herramienta de Phishing de Inicio de Sesión
 
-Thief Raccoon is a tool designed for educational purposes to demonstrate how phishing attacks can be conducted on various operating systems. This tool is intended to raise awareness about cybersecurity threats and help users understand the importance of security measures like 2FA and password management.
+Thief Raccoon es una herramienta diseñada con fines educativos para demostrar cómo se pueden llevar a cabo ataques de phishing en varios sistemas operativos. Esta herramienta tiene como objetivo crear conciencia sobre las amenazas de ciberseguridad y ayudar a los usuarios a comprender la importancia de medidas de seguridad como la autenticación de dos factores (2FA) y la gestión de contraseñas.
 
 <a href="https://ibb.co/L0Zn2XP"><img src="https://i.ibb.co/3TCBL9s/Captura-de-pantalla-2024-05-23-111620.png" alt="Captura-de-pantalla-2024-05-23-111620" border="0"></a>
 
-## Features
+## Características
 
-- Phishing simulation for Windows 10, Windows 11, Windows XP, Windows Server, Ubuntu, Ubuntu Server, and macOS.
-- Capture user credentials for educational demonstrations.
-- Customizable login screens that mimic real operating systems.
-- Full-screen mode to enhance the phishing simulation.
+- Simulación de phishing para Windows 10, Windows 11, Windows XP, Windows Server, Ubuntu, Ubuntu Server y macOS.
+- Captura de credenciales de usuario para demostraciones educativas.
+- Pantallas de inicio de sesión personalizables que imitan sistemas operativos reales.
+- Modo de pantalla completa para mejorar la simulación de phishing.
 
-## Installation
+## Instalación
 
-### Prerequisites
+### Requisitos previos
 
 - Python 3.x
-- pip (Python package installer)
-- ngrok (for exposing the local server to the internet)
+- pip (instalador de paquetes de Python)
+- ngrok (para exponer el servidor local a internet)
 
-### Download and Install
+### Descargar e Instalar
 
-1. **Clone the repository:**
+1. **Clonar el repositorio:**
 
    ```bash
    git clone https://github.com/davenisc/thief_raccoon.git
    cd thief_raccoon
 
-2. Install python venv
+2. Instalar python venv
    
    ```bash
    apt install python3.11-venv
 
-3. **Create venv:**
+3. **Crear venv:**
 
    ```bash
    python -m venv raccoon_venv
    source raccoon_venv/bin/activate
 
-4. **Install the required libraries:**
+4. **Instalar las bibliotecas requeridas:**
    
    ```bash
    pip install -r requirements.txt
 
-**Usage**
+**Uso**
 
-1. **Run the main script:**
+1. **Ejecutar el script principal:**
    
    ```bash
    python app.py
 
-2. **Select the operating system for the phishing simulation:**
+2. **Seleccionar el sistema operativo para la simulación de phishing:**
 
-   After running the script, you will be presented with a menu to select the operating system. Enter the number corresponding to the OS you want to simulate.
+   Después de ejecutar el script, se presentará un menú para seleccionar el sistema operativo. Ingresa el número correspondiente al SO que deseas simular.
 
-3. **Access the phishing page:**
+3. **Acceder a la página de phishing:**
 
-   If you are on the same local network (LAN), open your web browser and navigate to http://127.0.0.1:5000.
+   Si estás en la misma red local (LAN), abre tu navegador web y navega a http://127.0.0.1:5000.
    
-   If you want to make the phishing page accessible over the internet, use ngrok.
+   Si deseas que la página de phishing sea accesible por internet, usa ngrok.
 
-Using ngrok
+Usando ngrok
 
-1. **Download and install ngrok**
+1. **Descargar e instalar ngrok**
 
-Download ngrok from ngrok.com and follow the installation instructions for your operating system.
+Descarga ngrok desde ngrok.com y sigue las instrucciones de instalación para tu sistema operativo.
 
-2. **Expose your local server to the internet:**
+2. **Exponer tu servidor local a internet:**
 
-3. **Get the public URL:**
+3. **Obtener la URL pública:**
 
-After running the above command, ngrok will provide you with a public URL. Share this URL with your test subjects to access the phishing page over the internet.
+Después de ejecutar el comando anterior, ngrok te proporcionará una URL pública. Comparte esta URL con tus sujetos de prueba para acceder a la página de phishing por internet.
 
-**How to install Ngrok on Linux?**
+**Cómo instalar Ngrok en Linux?**
 
-1. Install ngrok via Apt with the following command:
+1. Instala ngrok via Apt con el siguiente comando:
 
    ```bash
    curl -s https://ngrok-agent.s3.amazonaws.com/ngrok.asc \
@@ -84,30 +85,30 @@ After running the above command, ngrok will provide you with a public URL. Share
       && sudo apt update \
       && sudo apt install ngrok
 
-2. Run the following command to add your authtoken to the default ngrok.yml
+2. Ejecuta el siguiente comando para agregar tu authtoken al ngrok.yml predeterminado
 
    ```bash
       ngrok config add-authtoken xxxxxxxxx--your-token-xxxxxxxxxxxxxx
 
-**Deploy your app online**
+**Despliega tu aplicación en línea**
 
-3. Put your app online at ephemeral domain Forwarding to your upstream service. For example, if it is listening on port http://localhost:8080, run:
+3. Pon tu aplicación en línea en un dominio efímero que redirija a tu servicio upstream. Por ejemplo, si está escuchando en el puerto http://localhost:8080, ejecuta:
 
       ```bash
       ngrok http http://localhost:5000
 
-**Example**
+**Ejemplo**
 
-1. **Run the main script:**
+1. **Ejecutar el script principal:**
    
    ```bash
    python app.py
 
 
-2. **Select Windows 11 from the menu:**
+2. **Seleccionar Windows 11 del menú:**
 
    ```bash
-   Select the operating system for phishing:
+   Selecciona el sistema operativo para el phishing:
    1. Windows 10
    2. Windows 11
    3. Windows XP
@@ -115,21 +116,21 @@ After running the above command, ngrok will provide you with a public URL. Share
    5. Ubuntu
    6. Ubuntu Server
    7. macOS
-   Enter the number of your choice: 2
+   Ingresa el número de tu elección: 2
 
-3. **Access the phishing page:**
+3. **Acceder a la página de phishing:**
 
-Open your browser and go to http://127.0.0.1:5000 or the ngrok public URL.
+Abre tu navegador y ve a http://127.0.0.1:5000 o a la URL pública de ngrok.
 
-**Disclaimer**
+**Descargo de responsabilidad**
 
-**This tool is intended for educational purposes only. The author is not responsible for any misuse of this tool. Always obtain explicit permission from the owner of the system before conducting any phishing tests.**
+**Esta herramienta está destinada únicamente con fines educativos. El autor no se hace responsable de ningún mal uso de esta herramienta. Siempre obtén permiso explícito del propietario del sistema antes de realizar pruebas de phishing.**
 
-**License**
+**Licencia**
 
-This project is licensed under the MIT License. See the LICENSE file for details.
+Este proyecto está bajo la Licencia MIT. Consulta el archivo LICENSE para más detalles.
 
-**ScreenShots**
+**Capturas de Pantalla**
 
 <a href="https://ibb.co/mcNh32n"><img src="https://i.ibb.co/S3fVzMk/Captura-de-pantalla-2024-05-23-111751.png" alt="Captura-de-pantalla-2024-05-23-111751" border="0"></a>
 
@@ -141,35 +142,6 @@ This project is licensed under the MIT License. See the LICENSE file for details
 
 <a href="https://ibb.co/Qf7kKMJ"><img src="https://i.ibb.co/c1KwrQy/Captura-de-pantalla-2024-05-23-111937.png" alt="Captura-de-pantalla-2024-05-23-111937" border="0"></a>
 
-**Credits**
+**Créditos**
 
-Developer: @davenisc
-Web: https://davenisc.com
-
-
-
-
-
-   <h2>Support</h2>
-    <p>If you find this project useful, you can support me on Buy Me a Coffee.</p>
-    <a href="https://buymeacoffee.com/davenisc" target="_blank">
-        <img src="https://img.shields.io/badge/Buy%20Me%20a%20Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black" alt="Buy Me a Coffee">
-    </a>
-
-   <h2>Follow Me</h2>
-    <p>Follow me on my social media profiles:</p>
-    <a href="https://twitter.com/davenisc" target="_blank">
-        <img src="https://img.shields.io/badge/X-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter">
-    </a>
-    <a href="https://www.instagram.com/davenisc.co/" target="_blank">
-        <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram">
-    </a>
-    <a href="https://www.linkedin.com/in/davenisc/" target="_blank">
-        <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
-    </a>
-
-   <h2>Donate USDT</h2>
-    <p>If you would like to support this project with a USDT BEP-20 donation, you can send it to the following Binance wallet address:</p>
-    <pre>0x15283841da6b5099d991fd64fdcb302478f4cc5a</pre>
-
-
+Des
