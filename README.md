@@ -1,4 +1,3 @@
-```python
 # Thief Raccoon - Herramienta de Phishing de Inicio de Sesión
 
 Thief Raccoon es una herramienta diseñada con fines educativos para demostrar cómo se pueden llevar a cabo ataques de phishing en varios sistemas operativos. Esta herramienta tiene como objetivo crear conciencia sobre las amenazas de ciberseguridad y ayudar a los usuarios a comprender la importancia de medidas de seguridad como la autenticación de dos factores (2FA) y la gestión de contraseñas.
